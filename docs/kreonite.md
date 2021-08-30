@@ -14,7 +14,7 @@
 
 * Wash water needs to be set at water panel to 2.5gps.
  
-![Water Panel Set to 1.5gpm](images/water-panel.jpg)
+![Water Panel Set to 2.5gpm](images/water-panel.jpg)
 
 * Check replenisher levels. If low, mix more chemicals. 
     * Mix chemicals in 20L jugs then pour into canisters. Jugs are labeled. **Do not mix fixer in the dev jug and vice versa**
@@ -25,7 +25,8 @@
 
 
 ## Specifications
-* **Chemistry:** Temperature: 77°F/Specific Gravity: 1.043 ± 0.002
+* **Chemistry Temperature:** 77°F
+* **Specific Gravity:** 1.040 ± 0.002
 * **Speed Setting:** 320
 * **Developer time:** 2:08
 * **Fixer time:**
