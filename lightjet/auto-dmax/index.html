@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Creating Calibration Target with Auto-Dmax - Digital Silver Imaging Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Digital Silver Imaging Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Welcome to DSI Docs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../kreonite/" class="nav-link">Kreonite</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lightjet <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Creating Calibration Target with Auto-Dmax</a>
+</li>
+                                    
+<li>
+    <a href="../cleaning/" class="dropdown-item">Cleaning</a>
+</li>
+                                    
+<li>
+    <a href="../file-sepcs/" class="dropdown-item">File Specifications</a>
+</li>
+                                    
+<li>
+    <a href="../lightjet-daily/" class="dropdown-item">Daily Setup</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../kreonite/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../cleaning/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#creating-calibration-target-with-auto-dmax" class="nav-link">Creating Calibration Target with Auto-Dmax</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#calibration-check" class="nav-link">Calibration Check</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#advancing-media-for-printing" class="nav-link">Advancing Media for Printing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#shutdown" class="nav-link">Shutdown</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cleaning-lightjet" class="nav-link">Cleaning Lightjet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#trouble-shooting" class="nav-link">Trouble Shooting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="creating-calibration-target-with-auto-dmax">Creating Calibration Target with Auto-Dmax</h1>
+<h2 id="calibration-check">Calibration Check</h2>
+<ul>
+<li>Open <em>Fusion 3</em> application</li>
+<li>Create new</li>
+<li>Click <code>next</code></li>
+<li>Click <code>Re-print auto-dmax</code></li>
+<li>Wait for imaging to finish</li>
+<li>Wait at least and additional 5min for latent image to stabilize</li>
+<li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</li>
+<li>Feed paper's left edge first with the emulsion facing up into the processor.<ul>
+<li>Processing time takes 17 minutes. Set a timer.</li>
+</ul>
+</li>
+<li>After processing trim and dry with hairdryer (fiber only).</li>
+<li>In Fusion click <code>OK</code> that the plot is ready to be processed and then click <code>next</code></li>
+<li>Read strips one at a time starting with strip 1 (the right most strip).</li>
+<li>Evaluate cone<ul>
+<li>The cone is the white area which shows the tollerance of deltaE values from the patches </li>
+<li>Cone should be wide with most lines inside.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Very good cone" src="images/cone.png" /></p>
+<ul>
+<li>If good cone cancel and exit <em>Fusion 3</em> </li>
+<li>
+<p><strong>Do not click <code>next</code></strong></p>
+</li>
+<li>
+<p>If too light (lines lower than cone) means that the developer is too weak and needs to be replenished</p>
+</li>
+<li>
+<p>If too dark (lines higher than cone) means that the developer density is too high and needs to be deluted. </p>
+<ul>
+<li>Add water to dilute developer</li>
+</ul>
+</li>
+<li>
+<p>Repeat steps above until there's a good result</p>
+</li>
+<li>Once cone is good launch LightJet Spooler</li>
+<li>Turn off display</li>
+</ul>
+<h2 id="advancing-media-for-printing">Advancing Media for Printing</h2>
+<p>The media needs to be advanced far enough to 
+* On LightJet controll panel press the following buttons to advance the media 8 inches. This is advances enough paper to tape onto the take up core before exposing.
+1. <code>Online</code> 
+2. <code>Media</code>
+3. <code>Down arrow</code>
+4. <code>8</code>
+5. <code>Enter</code> </p>
+<hr />
+<h3 id="connecting-to-thrive-hot-folders">Connecting to Thrive Hot Folders</h3>
+<p>Finder on the menu bar click the <code>Go</code> menu then <code>Connect to Server…</code> or use the keyboard shortcut ⌘+K</p>
+<p><img alt="Connect to Server" src="images/connect-server.png" /></p>
+<p><strong>Server Address:</strong> smb://Thrive-PC/Oce LightJet 430/
+<strong>User:</strong> thrive
+<strong>Password:</strong> dsi2008</p>
+<p>Use the the hot folder that corresponds with the paper you are printing with.</p>
+<p><img alt="List of hot folders" src="images/thive-hot-folder.png" /></p>
+<h3 id="printing-files-from-thrive-rip-queue-to-lightjet-spooler">Printing files from Thrive RIP Queue to LightJet Spooler</h3>
+<ul>
+<li>Launch both Thrive RIP-Queue and Spooler Controller (FPC)</li>
+<li>Go to RIP-Queue and highlight Océ LightJet 430</li>
+<li>On the right side click <code>Change…</code> and select the paper type list that is loaded in the LightJet from the Media.</li>
+</ul>
+<p><img alt=" " src="images/thrive-media.png" /></p>
+<ul>
+<li>On Mac copy prepared files to hot folder.<ul>
+<li>Files rendered from ROES can be copied straight to hot folder</li>
+</ul>
+</li>
+<li>Files dropped into hot folder will show up in RIP-Queue in the <em>Jobs Ready to Print</em> pane</li>
+<li>When you are ready to rip images select the files you want and click the blue pause button. They will start ripping one-by-one</li>
+<li>
+<p>Ripped files move down to <em>Buffered Jobs</em>. These can be re-processed without copying from Mac again</p>
+</li>
+<li>
+<p>When all images are ripped go to Spooler Controller and click the green <code>Online</code> button to put the printer online</p>
+</li>
+<li>Select the correct media</li>
+</ul>
+<p><img alt=" " src="images/spooler-media.png" /></p>
+<ul>
+<li>To start exposure click <code>Print Now</code></li>
+</ul>
+<p><img alt=" " src="images/spooler-print-now.png" /></p>
+<h3 id="unloading-paper">Unloading paper</h3>
+<ul>
+<li>Press <code>Online</code>, <code>Media</code>, <code>Down</code>, <code>Down</code>, <code>Enter</code></li>
+<li>When the LightJet finished advancing media cut and feed into processor</li>
+<li>You are prompted with two options. Unload Media or advance for printing again.<ul>
+<li>Press <code>Ecape</code> to eject paper</li>
+<li>Press <code>Enter</code> to advance and tape to core</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="shutdown">Shutdown</h2>
+<h3 id="lightjet-shutdown">Lightjet Shutdown</h3>
+<ul>
+<li>Turn off LightJet using the power switch on back left<ul>
+<li>The cooling fan will run for 10 minutes after the LightJet is turned off</li>
+</ul>
+</li>
+<li>Shut down both workstations</li>
+</ul>
+<h2 id="cleaning-lightjet">Cleaning Lightjet</h2>
+<ul>
+<li>Sweeping out drum</li>
+<li>Cleaning output rollers</li>
+</ul>
+<h2 id="trouble-shooting">Trouble Shooting</h2>
+<h3 id="elite-technical-service">Elite Technical Service</h3>
+<p>All questions about the LightJet or Onyx workstations</p>
+<p>Mark Felice:</p>
+<ul>
+<li>201-696-8771</li>
+<li>mfelice@elitetechservice.com</li>
+</ul>
+<p>Working directories</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
