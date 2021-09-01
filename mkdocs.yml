@@ -1,1 +1,18 @@
 site_name: Digital Silver Imaging Documentation
+site_url: http://docs.digitalsilverimaging.com
+site_author: Christopher Bowers
+
+theme:
+    name: mkdocs
+    locale: en
+
+repo_url: https://github.com/digitalsilverimaging/digitalsilverimaging.github.io
+edit_uri: ""
+
+markdown_extensions:
+    - toc:
+        permalink:
+    - admonition
+    - smarty
+    - sane_lists
+    - tables
