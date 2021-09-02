@@ -1,6 +1,6 @@
 # Support Contact Information
 
-## Dunning Photo
+## Dunning Photo Parts
 
 All questions about the Kreonite processor
 
