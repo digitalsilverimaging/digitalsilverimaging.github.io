@@ -114,22 +114,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#advancing-media-for-printing" class="nav-link">Advancing Media for Printing</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#shutdown" class="nav-link">Shutdown</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#cleaning-lightjet" class="nav-link">Cleaning Lightjet</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#trouble-shooting" class="nav-link">Trouble Shooting</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -145,22 +129,30 @@
 <li>Click <code>next</code></li>
 <li>Click <code>Re-print auto-dmax</code></li>
 <li>Wait for imaging to finish</li>
-<li>Wait at least and additional 5min for latent image to stabilize</li>
-<li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</li>
+<li>
+<p>Wait at least and additional 5min for latent image to stabilize</p>
+</li>
+<li>
+<p>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</p>
+</li>
 <li>Feed paper&rsquo;s left edge first with the emulsion facing up into the processor.<ul>
 <li>Processing time takes 17 minutes. Set a timer.</li>
 </ul>
 </li>
 <li>After processing trim and dry with hairdryer (fiber only).</li>
 <li>In Fusion click <code>OK</code> that the plot is ready to be processed and then click <code>next</code></li>
-<li>Read strips one at a time starting with strip 1 (the right most strip).</li>
-<li>Evaluate cone<ul>
+<li>
+<p>Read strips one at a time starting with strip 1 (the right most strip).</p>
+</li>
+<li>
+<p>Evaluate cone</p>
+<ul>
 <li>The cone is the white area which shows the tollerance of deltaE values from the patches </li>
 <li>Cone should be wide with most lines inside.</li>
 </ul>
 </li>
 </ul>
-<p><img alt="Very good cone" src="images/cone.png" /></p>
+<p><img alt="Very good cone" src="/images/cone.png" /></p>
 <ul>
 <li>If good cone cancel and exit <em>Fusion 3</em> </li>
 <li>
@@ -179,86 +171,7 @@
 <p>Repeat steps above until there&rsquo;s a good result</p>
 </li>
 <li>Once cone is good launch LightJet Spooler</li>
-<li>Turn off display</li>
-</ul>
-<h2 id="advancing-media-for-printing">Advancing Media for Printing</h2>
-<p>The media needs to be advanced far enough to 
-* On LightJet controll panel press the following buttons to advance the media 8 inches. This is advances enough paper to tape onto the take up core before exposing.
-1. <code>Online</code> 
-2. <code>Media</code>
-3. <code>Down arrow</code>
-4. <code>8</code>
-5. <code>Enter</code> </p>
-<hr />
-<h3 id="connecting-to-thrive-hot-folders">Connecting to Thrive Hot Folders</h3>
-<p>Finder on the menu bar click the <code>Go</code> menu then <code>Connect to Server…</code> or use the keyboard shortcut ⌘+K</p>
-<p><img alt="Connect to Server" src="images/connect-server.png" /></p>
-<p><strong>Server Address:</strong> smb://Thrive-PC/Oce LightJet 430/
-<strong>User:</strong> thrive
-<strong>Password:</strong> dsi2008</p>
-<p>Use the the hot folder that corresponds with the paper you are printing with.</p>
-<p><img alt="List of hot folders" src="images/thive-hot-folder.png" /></p>
-<h3 id="printing-files-from-thrive-rip-queue-to-lightjet-spooler">Printing files from Thrive RIP Queue to LightJet Spooler</h3>
-<ul>
-<li>Launch both Thrive RIP-Queue and Spooler Controller (FPC)</li>
-<li>Go to RIP-Queue and highlight Océ LightJet 430</li>
-<li>On the right side click <code>Change…</code> and select the paper type list that is loaded in the LightJet from the Media.</li>
-</ul>
-<p><img alt=" " src="images/thrive-media.png" /></p>
-<ul>
-<li>On Mac copy prepared files to hot folder.<ul>
-<li>Files rendered from ROES can be copied straight to hot folder</li>
-</ul>
-</li>
-<li>Files dropped into hot folder will show up in RIP-Queue in the <em>Jobs Ready to Print</em> pane</li>
-<li>When you are ready to rip images select the files you want and click the blue pause button. They will start ripping one-by-one</li>
-<li>
-<p>Ripped files move down to <em>Buffered Jobs</em>. These can be re-processed without copying from Mac again</p>
-</li>
-<li>
-<p>When all images are ripped go to Spooler Controller and click the green <code>Online</code> button to put the printer online</p>
-</li>
-<li>Select the correct media</li>
-</ul>
-<p><img alt=" " src="images/spooler-media.png" /></p>
-<ul>
-<li>To start exposure click <code>Print Now</code></li>
-</ul>
-<p><img alt=" " src="images/spooler-print-now.png" /></p>
-<h3 id="unloading-paper">Unloading paper</h3>
-<ul>
-<li>Press <code>Online</code>, <code>Media</code>, <code>Down</code>, <code>Down</code>, <code>Enter</code></li>
-<li>When the LightJet finished advancing media cut and feed into processor</li>
-<li>You are prompted with two options. Unload Media or advance for printing again.<ul>
-<li>Press <code>Ecape</code> to eject paper</li>
-<li>Press <code>Enter</code> to advance and tape to core</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h2 id="shutdown">Shutdown</h2>
-<h3 id="lightjet-shutdown">Lightjet Shutdown</h3>
-<ul>
-<li>Turn off LightJet using the power switch on back left<ul>
-<li>The cooling fan will run for 10 minutes after the LightJet is turned off</li>
-</ul>
-</li>
-<li>Shut down both workstations</li>
-</ul>
-<h2 id="cleaning-lightjet">Cleaning Lightjet</h2>
-<ul>
-<li>Sweeping out drum</li>
-<li>Cleaning output rollers</li>
-</ul>
-<h2 id="trouble-shooting">Trouble Shooting</h2>
-<h3 id="elite-technical-service">Elite Technical Service</h3>
-<p>All questions about the LightJet or Onyx workstations</p>
-<p>Mark Felice:</p>
-<ul>
-<li>201-696-8771</li>
-<li>mfelice@elitetechservice.com</li>
-</ul>
-<p>Working directories</p></div>
+</ul></div>
             </div>
         </div>
 
