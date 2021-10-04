@@ -1,3 +1,11 @@
+---
+title: Support Contact Information
+summary:
+authors:
+    - Christopher Bowers
+date: 2021-09-01
+---
+
 # Support Contact Information
 
 ## Dunning Photo Parts
@@ -10,6 +18,14 @@ Steve Dunning:
 * parts@dunningphoto.com
 
 ---
+## Dakis
+
+All questions regarding Dakis
+
+Usually PC (short Pierre-Charles)
+
+* qb@dakis.com
+
 
 ## Elite Technical Service
 
