@@ -8,7 +8,7 @@
         <meta name="author" content="Christopher Bowers">
         <link rel="canonical" href="http://docs.digitalsilverimaging.com/lightjet/auto-dmax/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Creating Calibration Target with Auto-Dmax - Digital Silver Imaging Documentation</title>
+        <title>Create Cut file for ICL Imaging - Digital Silver Imaging Documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -37,30 +37,47 @@
                                 <a href="../.." class="nav-link">Quick Links</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../canon-paper-setup/" class="nav-link">Canon paper setup</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../canon/" class="nav-link">Canon</a>
-                            </li>
-                            <li class="navitem">
                                 <a href="../../icl-cut-files/" class="nav-link">Create Cut file for ICL Imaging</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../inkjet-printing/" class="nav-link">Inkjet printing</a>
-                            </li>
-                            <li class="navitem">
                                 <a href="../../support/" class="nav-link">Support Contact Information</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dakis/dakis/" class="dropdown-item">Dakis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Inkjet <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../inkjet/canon-paper-setup/" class="dropdown-item">Canon paper setup</a>
+</li>
+                                    
+<li>
+    <a href="../../inkjet/canon/" class="dropdown-item">Canon</a>
+</li>
+                                    
+<li>
+    <a href="../../inkjet/inkjet-printing/" class="dropdown-item">Inkjet printing</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kreonite <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../Kreonite/kreonite-parts-list/" class="dropdown-item">Kreonite Common Parts List</a>
+    <a href="../../kreonite/kreonite-parts-list/" class="dropdown-item">Kreonite Common Parts List</a>
 </li>
                                     
 <li>
-    <a href="../../Kreonite/kreonite/" class="dropdown-item">Kreonite</a>
+    <a href="../../kreonite/kreonite/" class="dropdown-item">Kreonite</a>
 </li>
                                 </ul>
                             </li>
@@ -69,7 +86,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Creating Calibration Target with Auto-Dmax</a>
+    <a href="./" class="dropdown-item active">Create Cut file for ICL Imaging</a>
 </li>
                                     
 <li>
@@ -81,7 +98,7 @@
 </li>
                                     
 <li>
-    <a href="../lightjet-daily/" class="dropdown-item">Daily Setup</a>
+    <a href="../lightjet-daily/" class="dropdown-item">Lightjet Daily Setup</a>
 </li>
                                 </ul>
                             </li>
@@ -94,7 +111,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../Kreonite/kreonite/" class="nav-link">
+                                <a rel="prev" href="../../kreonite/kreonite/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -124,13 +141,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#creating-calibration-target-with-auto-dmax" class="nav-link">Creating Calibration Target with Auto-Dmax</a>
+            <li class="nav-item" data-level="1"><a href="#creating-calibration-new-target-with-auto-dmax" class="nav-link">Creating Calibration New Target with Auto-Dmax</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#auto-dmax" class="nav-link">Auto-Dmax</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#grey-balance" class="nav-link">Grey Balance</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -141,32 +154,37 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="creating-calibration-target-with-auto-dmax">Creating Calibration Target with Auto-Dmax</h1>
+<h1 id="creating-calibration-new-target-with-auto-dmax">Creating Calibration New Target with Auto-Dmax</h1>
 <h2 id="auto-dmax">Auto-Dmax</h2>
-<h2 id="grey-balance">Grey Balance</h2>
 <ul>
 <li>Open <em>Fusion 3</em> application</li>
 <li>Create new</li>
 <li>Click <code>next</code></li>
-<li>Click <code>Re-print auto-dmax</code></li>
-<li>Wait for imaging to finish</li>
+<li>
+<p>Click <code>Print Auto dmax Pattern</code></p>
+</li>
+<li>
+<p>Wait for imaging to finish</p>
+</li>
 <li>
 <p>Wait at least and additional 5min for latent image to stabilize</p>
 </li>
-<li>
-<p>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</p>
-</li>
+<li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</li>
 <li>Feed paper&rsquo;s left edge first with the emulsion facing up into the processor.<ul>
 <li>Processing time takes 17 minutes. Set a timer.</li>
 </ul>
 </li>
-<li>After processing trim and dry with hairdryer (fiber only).</li>
-<li>In Fusion click <code>OK</code> that the plot is ready to be processed and then click <code>next</code></li>
+<li>
+<p>After processing trim and dry with hairdryer (fiber only).</p>
+</li>
+<li>
+<p>In Fusion click <code>OK</code> that the plot is ready to be processed and then click <code>next</code></p>
+</li>
 <li>
 <p>Read strips one at a time starting with strip 1 (the right most strip).</p>
 </li>
 <li>
-<p>Evaluate cone</p>
+<p>Evaluate dmax</p>
 <ul>
 <li>The cone is the white area which shows the tollerance of deltaE values from the patches </li>
 <li>Cone should be wide with most lines inside.</li>
@@ -180,18 +198,8 @@
 <p><strong>Do not click <code>next</code></strong></p>
 </li>
 <li>
-<p>If too light (lines lower than cone) means that the developer is too weak and needs to be replenished</p>
-</li>
-<li>
-<p>If too dark (lines higher than cone) means that the developer density is too high and needs to be deluted. </p>
-<ul>
-<li>Add water to dilute developer</li>
-</ul>
-</li>
-<li>
 <p>Repeat steps above until there&rsquo;s a good result</p>
 </li>
-<li>Once cone is good launch LightJet Spooler</li>
 </ul></div>
             </div>
         </div>
