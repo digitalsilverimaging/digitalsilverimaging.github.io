@@ -8,7 +8,7 @@
         <meta name="author" content="Christopher Bowers">
         <link rel="canonical" href="http://docs.digitalsilverimaging.com/inkjet/inkjet-printing/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Inkjet printing - Digital Silver Imaging Documentation</title>
+        <title>Inkjet printing - DSI Documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">Digital Silver Imaging Documentation</a>
+                <a class="navbar-brand" href="../..">DSI Documentation</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -37,10 +37,7 @@
                                 <a href="../.." class="nav-link">Quick Links</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../icl-cut-files/" class="nav-link">Create Cut file for ICL Imaging</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../support/" class="nav-link">Support Contact Information</a>
+                                <a href="../../support/" class="nav-link">Support</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
@@ -61,6 +58,10 @@
                                     
 <li>
     <a href="../canon/" class="dropdown-item">Canon</a>
+</li>
+                                    
+<li>
+    <a href="../icl-cut-files/" class="dropdown-item">Create Cut file for ICL Imaging</a>
 </li>
                                     
 <li>
@@ -111,7 +112,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../canon/" class="nav-link">
+                                <a rel="prev" href="../icl-cut-files/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -151,7 +152,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#paper-feed-adjustment" class="nav-link">Paper Feed Adjustment</a>
+            <li class="nav-item" data-level="2"><a href="#automatic-banding-adjustment-paper-feed-adjustment" class="nav-link">Automatic Banding Adjustment (Paper Feed Adjustment)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -173,68 +174,40 @@
 <li>Print</li>
 </ol>
 <h2 id="borderless-printing">Borderless Printing</h2>
-<h2 id="paper-feed-adjustment">Paper Feed Adjustment</h2>
-<h3 id="automatic-banding-adjustment">Automatic Banding Adjustment</h3>
+<p>If you need to print edge to edge on roll paper user borderless printing. Borderless printing is only available for the Pro-4000 and Pro-6000 on roll paper. You may print borderless on the Pro-1000 anytime with the default settings.</p>
+<h2 id="automatic-banding-adjustment-paper-feed-adjustment">Automatic Banding Adjustment (Paper Feed Adjustment)</h2>
 <p>From <a href="https://support.usa.canon.com/library/ij/Manual/All/PRO-4000/EN/UG/ug_paperfeed01_0102.html">https://support.usa.canon.com/library/ij/Manual/All/PRO-4000/EN/UG/ug_paperfeed01_0102.html</a>:</p>
-<p>If printed images are affected by banding in different colors across the sheet, execute Adjust print quality for automatic adjustment of the paper feed amount.</p>
-<p>The printer prints and reads a test pattern for automatic adjustment of the feed amount.</p>
-<p><img alt="" src="common/i_important_trans.gif" />Important</p>
-<p><img alt="" src="common/i_note_trans.gif" />Note</p>
-<ul>
-<li>We recommend executing the adjustment if you have changed the paper type or paper size.</li>
-<li>
+<p>If printed images are affected by banding in different colors across the sheet, execute <strong>Adjust print quality</strong> for automatic adjustment of the paper feed amount. The printer prints and reads a test pattern for automatic adjustment of the feed amount.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>Always check the Set priority values.</p>
-<ul>
-<li><a href="ug_paperfeed01_0101.html">Selecting Feed Amount Adjustment Method</a></li>
-<li>
-<p>If additional fine-tuning is necessary, execute Paper feed fine adjustment.</p>
-</li>
-<li>
-<p><a href="ug_paperfeed01_0104.html">Fine-Tuning Paper Feed Amount</a></p>
-</li>
-<li>
-<p>Use Adjust feed length to ensure that lines in CAD drawings are printed at exactly the right length.</p>
-</li>
-<li>
-<p><a href="ug_paperfeed01_0105.html">Adjusting Line Length</a></p>
-</li>
-<li>This may take some time, depending on the type of paper.</li>
-</ul>
-</li>
-</ul>
-<p>Items to Prepare</p>
-<p>When Using Rolls</p>
-<p>An unused roll</p>
-<p>When Using Sheets</p>
-<p>Two sheets of unused paper of at least Letter size (or one sheet when using A2 or larger)</p>
+</div>
+<h3 id="selecting-feed-amount-adjustment-method">Selecting Feed Amount Adjustment Method</h3>
+<p>There are two methods of adjusting the paper feed amount, Prioritize print quality and Prioritize length accuracy, either of which will be applied during printing. Since the method that is applied during printing is determined from the value of the Set priority setting, configure Set priority to match the print target.</p>
+<p>Follow the procedure below to perform settings.</p>
+<ol>
+<li>Load paper.</li>
+<li>Tap HOME screen then tap Maintenance.</li>
+<li>Tap Paper feed adjustment.</li>
+<li>Tap Set priority.</li>
+<li>Tap paper to adjust.</li>
+<li>Tap setting &ldquo;Prioritize print quality&rdquo;</li>
+<li>Tap OK on displayed screen.</li>
+</ol>
 <p>Follow the procedure below to adjust.</p>
 <ol>
-<li>
-<p>Load paper.</p>
-<ul>
-<li><a href="../LBGA/tp000051.html">Loading Rolls on the Roll Holder</a></li>
-<li><a href="../LBGA/tp000052.html">Loading the Upper Roll on the Printer</a></li>
-<li>
-<p><a href="../LBGA/tp000058.html">Loading Sheets in the Printer</a>
-  2. Flick HOME screen and tap <img alt="" src="screens/i_maintenance.jpg" /> Maintenance.</p>
-</li>
-<li>
-<p><a href="ug_setting01_0200.html">Menu Operations</a>
-  3. Tap Paper feed adjustment.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Tap Adjust print quality.</p>
-</li>
-<li>
-<p>Tap Auto.</p>
-</li>
-<li>
-<p>Tap paper to adjust.</p>
-</li>
+<li>Load paper</li>
+<li>Tap HOME then tap Maintenance.</li>
+<li>Tap Paper feed adjustment.</li>
+<li>Tap Adjust print quality.</li>
+<li>Tap Auto.</li>
+<li>Tap paper to adjust.</li>
 </ol>
-<p>A test pattern is printed for adjustment and adjustment is finished.</p></div>
+<p>A test pattern is printed for adjustment and adjustment is finished.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If additional fine-tuning is necessary, execute <a href="https://support.usa.canon.com/library/ij/Manual/All/PRO-4000/EN/UG/ug_paperfeed01_0104.html">Paper feed fine adjustment</a>.</p>
+</div></div>
             </div>
         </div>
 
