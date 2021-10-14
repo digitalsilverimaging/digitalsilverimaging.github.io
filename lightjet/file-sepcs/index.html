@@ -108,7 +108,7 @@
 </li>
                                     
 <li>
-    <a href="../lightjet-daily/" class="dropdown-item">Lightjet Daily Setup</a>
+    <a href="../overview/" class="dropdown-item">Lightjet Daily Setup</a>
 </li>
                                 </ul>
                             </li>
@@ -126,7 +126,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../lightjet-daily/" class="nav-link">
+                                <a rel="next" href="../overview/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -163,15 +163,19 @@
 <h1 id="file-specifications">File Specifications</h1>
 <ul>
 <li>Color Space:<ul>
-<li>RGB or Grayscale 2.2 </li>
-<li>Not ProPhoto RGB, Dot Gain 20% or other 1.8 gamma color spaces</li>
+<li>Adobe RGB (1998), sRGB, or Grayscale 2.2  gamma</li>
+<li>Not ProPhoto RGB, Dot Gain 20% or any 1.8 gamma color space</li>
 </ul>
 </li>
 <li>8bit preferred. 16bit is allowed and will be converted to 8bit by Thrive RIP-Queue</li>
 <li>File types: JPG or TIF not <strong>PSD</strong> </li>
 <li>Compression: None is preferred LZW for 8bit is ok and ZIP is not supported</li>
 <li>Files should be sized with borders to 100% of print size at 300ppi</li>
-</ul></div>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Files with 1.8 gamma will be assigned 2.2 gamma in Thrive causing them to print dark. Any file with 1.8 gamma must be converted to 2.2 gamma beforehand.</p>
+</div></div>
             </div>
         </div>
 

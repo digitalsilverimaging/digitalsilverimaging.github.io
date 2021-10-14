@@ -108,7 +108,7 @@
 </li>
                                     
 <li>
-    <a href="../lightjet-daily/" class="dropdown-item">Lightjet Daily Setup</a>
+    <a href="../overview/" class="dropdown-item">Lightjet Daily Setup</a>
 </li>
                                 </ul>
                             </li>
@@ -151,12 +151,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#copy-existing-target" class="nav-link">Copy Existing Target</a>
+            <li class="nav-item" data-level="2"><a href="#copy-an-existing-target" class="nav-link">Copy an Existing Target</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
             <li class="nav-item" data-level="2"><a href="#creating-calibration-new-target-with-auto-dmax" class="nav-link">Creating Calibration New Target with Auto-Dmax</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#linking-calibration-target-to-media" class="nav-link">Linking Calibration Target to Media</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -170,21 +175,20 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="copy-existing-target">Copy Existing Target</h2>
+<h2 id="copy-an-existing-target">Copy an Existing Target</h2>
 <h2 id="creating-calibration-new-target-with-auto-dmax">Creating Calibration New Target with Auto-Dmax</h2>
 <ol>
 <li>Open <em>Fusion 3</em> application</li>
-<li>Create new</li>
-<li>Click <code>next</code></li>
-<li>Click <code>Print Auto dmax Pattern</code></li>
 </ol>
 <ul>
-<li>
-<p>Wait for imaging to finish</p>
-</li>
-<li>
-<p>Wait at least and additional 5min for latent image to stabilize</p>
-</li>
+<li>Wait for imaging to finish</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If Dmax hasn&rsquo;t been reached you must go back to the laser comps and manually change them. The Fusion softwear is fooled by the black and white paper and will make an incorrect guess for new laser compensation.</p>
+</div>
+<ul>
+<li>Wait at least and additional 5 minutes for latent image to stabilize</li>
 <li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</li>
 <li>Feed paper&rsquo;s left edge first with the emulsion facing up into the processor.<ul>
 <li>Processing time takes 17 minutes. Set a timer.</li>
@@ -217,8 +221,37 @@
 <p>Repeat steps above until there&rsquo;s a good result</p>
 </li>
 </ul>
+<h2 id="linking-calibration-target-to-media">Linking Calibration Target to Media</h2>
+<ol>
+<li>In Thrive RIP-Queue click <strong>Configure Printer</strong></li>
+<li>click <strong>Yes</strong> to shutdown printer</li>
+<li>Switch to the Device tab</li>
+<li>Click <strong>Features</strong></li>
+<li>Click <strong>Media Type</strong> then <strong>Configure…</strong></li>
+<li>Select the media type you want to update</li>
+<li>click <strong>Edit</strong> (If no <strong>Edit</strong> button appears you will need to double click the media type)</li>
+<li>Type the name to match the paper type and batch number</li>
+<li>Select the calibration for the corresponding batch</li>
+<li>Click <strong>OK</strong></li>
+<li>Click <strong>OK</strong></li>
+<li>Click <strong>Done</strong></li>
+<li>Switch the <strong>Media</strong> tab</li>
+<li>Select media type</li>
+<li>Clcik <strong>Options…</strong></li>
+<li>Change Media Type in the drop down to match batch number</li>
+<li>Click <strong>OK</strong></li>
+<li>Click <strong>OK</strong></li>
+</ol>
 <h2 id="flashing-paper">Flashing Paper</h2>
-<p>In order to determin the maximum density of</p></div>
+<p>In order to determin the maximum density of paper you will need to fully expose the paper to light then process it.</p>
+<ol>
+<li>Cut off and expose paper fully to light for at least a few seconds</li>
+<li>Feed paper into processor and fully processes</li>
+<li>If fiber paper fully dry paper</li>
+<li>On the densitometer press menu then pap to read paper dmax</li>
+<li>Send through densitometer to read dmax. You will need to cut the paper to a small enough size to fit.</li>
+<li>Dmax reading is the absolute maximum black density for the paper/chemistry combination.</li>
+</ol></div>
             </div>
         </div>
 

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Christopher Bowers">
-        <link rel="canonical" href="http://docs.digitalsilverimaging.com/lightjet/lightjet-daily/">
+        <link rel="canonical" href="http://docs.digitalsilverimaging.com/lightjet/overview/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Lightjet Daily Setup - DSI Documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
@@ -151,28 +151,43 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#daily-setup" class="nav-link">Daily Setup</a>
-              <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#lightjet-startup" class="nav-link">LightJet Startup</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
             <li class="nav-item" data-level="2"><a href="#loading-paper" class="nav-link">Loading Paper</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
             <li class="nav-item" data-level="2"><a href="#calibration-check" class="nav-link">Calibration Check</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#shutdown" class="nav-link">Shutdown</a>
+            
+            <li class="nav-item" data-level="2"><a href="#connecting-to-thrive-hot-folders" class="nav-link">Connecting to Thrive Hot Folders</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="2"><a href="#printing-files-from-thrive-rip-queue-to-lightjet-spooler" class="nav-link">Printing files from Thrive RIP Queue to LightJet Spooler</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#lightjet-shutdown" class="nav-link">Lightjet Shutdown</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
             <li class="nav-item" data-level="2"><a href="#cleaning-lightjet" class="nav-link">Cleaning Lightjet</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="2"><a href="#pertinent-directories" class="nav-link">Pertinent Directories</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -180,20 +195,17 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="daily-setup">Daily Setup</h1>
 <h2 id="lightjet-startup">LightJet Startup</h2>
-<ul>
-<li>Check air pressure gage. If the pressure is not reading 70psi check if compressor is on.</li>
-<li>Turn LightJet power switch on. It&rsquo;s located on the left side rear.</li>
-</ul>
+<ol>
+<li>Turn on air compressor in the cutting room</li>
+<li>Turn LightJet power switch on. It&rsquo;s located on the left side rear. Booting and warm up takes about 15 minutes.</li>
+</ol>
 <p><img alt="LightJet Power Switch Circled in Orange" src="/images/lj-leftside.jpg" /></p>
-<ul>
-<li>Booting and warm up takes about 15 minutes.</li>
-</ul>
 <p><img alt="LightJet display after boot" src="/images/lj-offline.jpg" /></p>
-<ul>
+<ol start="3">
 <li>Turn on both workstations</li>
-</ul>
+<li><a href="#calibration-check">Print and process a grey balance</a> to check developer quality</li>
+</ol>
 <hr />
 <h2 id="loading-paper">Loading Paper</h2>
 <p><img alt="LightJet Control Panel (offline)" src="/images/lj-full-panel.jpg" /></p>
@@ -231,46 +243,45 @@
 <li>Click <strong>Re-print Gray balance Pattern</strong></li>
 <li>Wait for imaging to finish</li>
 <li>Wait at least and additional 5min for latent image to stabilize</li>
-<li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</li>
-<li>Feed paper&rsquo;s left edge first with the emulsion facing up into the processor.<ul>
-<li>Processing time takes 17 minutes. Set a timer.</li>
-</ul>
-</li>
-<li>After processing trim and dry with hairdryer (fiber only).</li>
-<li>In Fusion click <strong>OK</strong> that the plot is ready to be processed and then click <strong>next</strong></li>
-<li>Read strips one at a time starting with strip 1 (the right most strip).</li>
-<li>Evaluate cone<ul>
-<li>The cone is the white area which shows the tollerance of deltaE values from the patches </li>
-<li>Cone should be wide with most lines inside.</li>
-</ul>
-</li>
-</ul>
-<p><img alt="Very good cone" src="/images/cone.png" /></p>
-<ul>
-<li>If good cone cancel and exit <em>Fusion 3</em> </li>
+<li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Do not click <em>next</em></strong></p>
+<p>Close LightJet after cutting off paper otherwire you riske forgetting to close the door and accidentally expose paper when leaving the darkroom.</p>
 </div>
 <ul>
-<li>If too light (lines lower than cone) means that the developer is too weak and needs to be replenished</li>
-<li>
-<p>If too dark (lines higher than cone) means that the developer density is too high and needs to be deluted. </p>
+<li>Feed paper&rsquo;s left edge first with the emulsion facing up into the processor.<ul>
+<li>The total processing time in 17 minutes.</li>
+</ul>
+</li>
+<li>After processing is complete; trim and dry with hairdryer (fiber only).</li>
+<li>In Fusion click <strong>OK</strong> that the plot is ready to be processed and then click <strong>next</strong></li>
+<li>Read strips in the densitometer one at a time starting with strip 1 (the right most strip).</li>
+<li>Click <strong>Next</strong></li>
+<li>Evaluate cone<ul>
+<li>The cone is the white area which shows the tollerance of deltaE values of the patches </li>
+<li>The ideal cone should be wide on the left with most lines inside. There is room for flexibility with the cone and judgment is required.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Extremely good cone" src="/images/cone.png" /></p>
 <ul>
+<li>If the cone is acceptable click <strong>Cancel</strong> and exit <em>Fusion 3</em> </li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not click <strong>Next</strong> because Fusion will try to iterate the grey balance and you risk making a worse calibration</p>
+</div>
+<ul>
+<li>If you read in a calibration strip that is too light (lines lower than cone) it means that the developer is too weak and needs to be replenished.</li>
+<li>If too dark (lines higher than cone) means that the developer density is too high and needs to be deluted. <ul>
 <li>Dump proportional to the amount the adjustment is needed</li>
 </ul>
 </li>
-<li>
-<p>Repeat steps above until there&rsquo;s a good result</p>
-</li>
-<li>Once cone is good launch LightJet Spooler</li>
-<li>
-<p>Turn off display</p>
-</li>
-<li>
-<p>On LightJet press the following buttons to advance the media 8 inches. This is advances enough paper to tape onto the take up core before exposing.</p>
-<ul>
+<li>Repeat steps above until there is a good result</li>
+<li>Turn off display</li>
+<li>Advance paper for taping to core for printing.<ul>
+<li>On LightJet press the following buttons to advance the media 8 inches. It will advance enough paper in order to tape onto the take up core before printing.<ul>
 <li>Online</li>
 <li>Media</li>
 <li>Down arrow</li>
@@ -279,16 +290,18 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <hr />
-<h3 id="connecting-to-thrive-hot-folders">Connecting to Thrive Hot Folders</h3>
+<h2 id="connecting-to-thrive-hot-folders">Connecting to Thrive Hot Folders</h2>
 <p>Finder on the menu bar click the <strong>Go</strong> menu then <strong>Connect to Server…</strong> or use the keyboard shortcut ⌘+K</p>
 <p><img alt="Connect to Server" src="/images/connect-server.png" /></p>
-<p><strong>Server Address:</strong> smb://Thrive-PC/Oce LightJet 430/
-<strong>User:</strong> thrive
+<p><strong>Server Address:</strong> smb://Thrive-PC/Oce LightJet 430/<br />
+<strong>User:</strong> thrive<br />
 <strong>Password:</strong> dsi2008</p>
-<p>Use the the hot folder that corresponds with the paper you are printing with.</p>
+<p>Use the the hot folder that corresponds with the paper you are printing on.</p>
 <p><img alt="List of hot folders" src="/images/thive-hot-folder.png" /></p>
-<h3 id="printing-files-from-thrive-rip-queue-to-lightjet-spooler">Printing files from Thrive RIP Queue to LightJet Spooler</h3>
+<h2 id="printing-files-from-thrive-rip-queue-to-lightjet-spooler">Printing files from Thrive RIP Queue to LightJet Spooler</h2>
 <ul>
 <li>Launch both Thrive RIP-Queue and Spooler Controller (FPC)</li>
 <li>Go to RIP-Queue and highlight Océ LightJet 430</li>
@@ -296,18 +309,16 @@
 </ul>
 <p><img alt=" " src="/images/thrive-media.png" /></p>
 <ul>
-<li>On Mac copy prepared files to hot folder.<ul>
-<li>Files rendered from ROES can be copied straight to hot folder</li>
-</ul>
-</li>
-<li>Files dropped into hot folder will show up in RIP-Queue in the <em>Jobs Ready to Print</em> pane</li>
-<li>When you are ready to rip images select the files you want and click the blue pause button. They will start ripping one-by-one</li>
+<li>From your Mac copy prepared files into a hot folder.</li>
+<li>Files dropped into hot folders will show up in RIP-Queue in the <em>Jobs Ready to Print</em> pane</li>
+<li>When you are ready to rip images select the files you want and click the blue pause button. They will start ripping one–by–one</li>
 <li>
-<p>Ripped files move down to <em>Buffered Jobs</em>. These can be re-processed without copying from Mac again</p>
+<p>Ripped files move down to <em>Buffered Jobs</em>. These can be re-processed without having to copying from your Mac again</p>
 </li>
 <li>
-<p>When all images are ripped go to Spooler Controller and click the green <strong>Online</strong> button to put the printer online</p>
+<p>When all images are ripped switch to Spooler Controller</p>
 </li>
+<li>click the green <strong>Online</strong> button to put the printer online</li>
 <li>Select the correct media</li>
 </ul>
 <p><img alt=" " src="/images/spooler-media.png" /></p>
@@ -333,8 +344,7 @@
 <li>Press <strong>Ecape</strong> to eject paper</li>
 </ul>
 <hr />
-<h2 id="shutdown">Shutdown</h2>
-<h3 id="lightjet-shutdown">Lightjet Shutdown</h3>
+<h2 id="lightjet-shutdown">Lightjet Shutdown</h2>
 <ul>
 <li>Turn off LightJet using the power switch on back left<ul>
 <li>The cooling fan will run for 10 minutes after the LightJet is turned off</li>
@@ -347,7 +357,7 @@
 <li>Sweeping out drum</li>
 <li>Cleaning output rollers</li>
 </ul>
-<p>Working directories</p></div>
+<h2 id="pertinent-directories">Pertinent Directories</h2></div>
             </div>
         </div>
 
