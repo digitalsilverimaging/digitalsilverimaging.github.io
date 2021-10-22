@@ -16,3 +16,6 @@ markdown_extensions:
     - smarty
     - sane_lists
     - tables
+    
+extra_css:
+    - css/extra.css
