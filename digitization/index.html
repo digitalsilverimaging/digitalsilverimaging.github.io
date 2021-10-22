@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Christopher Bowers">
+        <link rel="canonical" href="http://docs.digitalsilverimaging.com/digitization/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Digitization - DSI Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../css/extra.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">DSI Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Quick Links</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Digitization</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../support/" class="nav-link">Support</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../dakis/dakis/" class="dropdown-item">Dakis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Inkjet <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../inkjet/canon-mct/" class="dropdown-item">Media Configuration Tool</a>
+</li>
+                                    
+<li>
+    <a href="../inkjet/canon/" class="dropdown-item">Canon</a>
+</li>
+                                    
+<li>
+    <a href="../inkjet/icl-cut-files/" class="dropdown-item">Create Cut file for ICL Imaging</a>
+</li>
+                                    
+<li>
+    <a href="../inkjet/inkjet-printing/" class="dropdown-item">Inkjet printing</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kreonite <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kreonite/kreonite-parts-list/" class="dropdown-item">Kreonite Common Parts List</a>
+</li>
+                                    
+<li>
+    <a href="../kreonite/kreonite/" class="dropdown-item">Kreonite</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lightjet <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../lightjet/auto-dmax/" class="dropdown-item">Create New Paper Target</a>
+</li>
+                                    
+<li>
+    <a href="../lightjet/cleaning/" class="dropdown-item">Cleaning</a>
+</li>
+                                    
+<li>
+    <a href="../lightjet/file-sepcs/" class="dropdown-item">File Specifications</a>
+</li>
+                                    
+<li>
+    <a href="../lightjet/overview/" class="dropdown-item">Lightjet Daily Setup</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../support/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/digitalsilverimaging/digitalsilverimaging.github.io" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#capture-one-online-user-guides" class="nav-link">Capture One Online User Guides</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#transmissive-film" class="nav-link">Transmissive (Film)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#transmissive-preflight-steps" class="nav-link">Transmissive Preflight Steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lensresolution-chart" class="nav-link">Lens/Resolution Chart</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#reflective-flat-artwork" class="nav-link">Reflective (Flat Artwork)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#reflective-preflight-steps" class="nav-link">Reflective Preflight Steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="capture-one-online-user-guides">Capture One Online User Guides</h1>
+<p><a href="https://support.captureone.com/hc/en-us/categories/360000279017-User-Guide">Capture One 21</a></p>
+<p><a href="https://support.captureone.com/hc/en-us/sections/360000704038-Capture-One-Cultural-Heritage-CH-">Capture One CH</a></p>
+<h1 id="transmissive-film">Transmissive (Film)</h1>
+<p><a href="/assets/DTCH_DigitizationWorkflows_Transmissive_2018.pdf">Digital Transitions Digitization Workflow Guide: Transmissive</a></p>
+<h2 id="transmissive-preflight-steps">Transmissive Preflight Steps</h2>
+<ol>
+<li>Select lens and extension tubes (See <a href="#lensresolution-chart">Lens/Resolution Chart</a>)</li>
+<li>Set camera position, focus and, level</li>
+<li>Set aperture to ƒ/10</li>
+<li>Set Mode, Profile, and Curve<ul>
+<li><strong>Mode:</strong> Photography</li>
+<li><strong>ICC Profile:</strong> Flat Art Reproduction LED DT Photon</li>
+<li><strong>Curve:</strong> Linear Scientific</li>
+</ul>
+</li>
+<li>Capture LCC raw file</li>
+<li>Generate LCC profile</li>
+<li>Set white balance based on light source</li>
+<li>Set exposure base on light source<ul>
+<li>Adjust shutter speed until the brightest luminance value of the LAB Color Readouts is as close to 98, without going over, as possible.</li>
+</ul>
+</li>
+</ol>
+<h2 id="lensresolution-chart">Lens/Resolution Chart</h2>
+<table>
+<thead>
+<tr>
+<th>Film Format</th>
+<th>Lens</th>
+<th>Extension Tubes</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8×10"</td>
+<td>72mm</td>
+<td>None</td>
+<td>~1300 ppi</td>
+</tr>
+<tr>
+<td>5×7"</td>
+<td>72mm</td>
+<td>None</td>
+<td>~2100 ppi</td>
+</tr>
+<tr>
+<td>4×5"</td>
+<td>120mm</td>
+<td>None</td>
+<td>~2600 ppi</td>
+</tr>
+<tr>
+<td>6×7</td>
+<td>120mm</td>
+<td>40mm</td>
+<td>~4500 ppi</td>
+</tr>
+<tr>
+<td>6×6</td>
+<td>120mm</td>
+<td>40mm</td>
+<td>~4500 ppi</td>
+</tr>
+<tr>
+<td>645</td>
+<td>120mm</td>
+<td>60mm</td>
+<td>~6000 ppi</td>
+</tr>
+<tr>
+<td>35mm</td>
+<td>120mm</td>
+<td>120mm</td>
+<td>~9900 ppi</td>
+</tr>
+</tbody>
+</table>
+<h1 id="reflective-flat-artwork">Reflective (Flat Artwork)</h1>
+<p><a href="/assets/DTCH_DigitizationWorkflows_Reflective_2018.pdf">Digital Transitions Digitization Workflow Guide: Reflective</a></p>
+<h2 id="reflective-preflight-steps">Reflective Preflight Steps</h2>
+<ol>
+<li>Select 72mm lens</li>
+<li>Set aperture to ƒ/8</li>
+<li>Set camera position, focus, and level</li>
+<li>Set Mode, Profile, and Curve<ul>
+<li><strong>Mode:</strong> Photography</li>
+<li><strong>ICC Profile:</strong> ColorChecker SG</li>
+<li><strong>Curve:</strong> Linear Scientific</li>
+</ul>
+</li>
+<li>Capture LCC raw file</li>
+<li>Generate LCC profile</li>
+<li>Set exposure based on patch G5 on ColorChecker SG.<ul>
+<li>The ColorChecker SG target patch G5 should have a Luminance value of 65.1 without exceeding it.</li>
+</ul>
+</li>
+<li>Set white balance based on patch F5 on ColorChecker SG</li>
+<li>After captures are complete use the <a href="/assets/DTDCH_Overlays_ColorCheckerSG_Adobe1998.png">DT Adobe RGB overlay</a> to fine tune exposure using levels. Apply levels to all captures.</li>
+<li>Use <a href="https://deltae.picturae.com">Delt.ae</a> to verify color accuracy.<ul>
+<li>Export a full size jpg in Adobe 1998 RGB and upload for validation.</li>
+</ul>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
