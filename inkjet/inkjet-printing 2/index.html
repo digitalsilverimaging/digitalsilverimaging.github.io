@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Christopher Bowers">
-        <link rel="canonical" href="http://docs.digitalsilverimaging.com/dakis/dakis/">
+        <link rel="canonical" href="http://docs.digitalsilverimaging.com/inkjet/inkjet-printing%202/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Dakis - DSI Documentation</title>
+        <title>Inkjet printing 2 - DSI Documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -43,37 +43,37 @@
                             <li class="navitem">
                                 <a href="../../support/" class="nav-link">Support</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Dakis</a>
+    <a href="../../dakis/dakis/" class="dropdown-item">Dakis</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Inkjet <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../inkjet/canon-mct/" class="dropdown-item">Media Configuration Tool</a>
+    <a href="../canon-mct/" class="dropdown-item">Media Configuration Tool</a>
 </li>
                                     
 <li>
-    <a href="../../inkjet/canon/" class="dropdown-item">Canon</a>
+    <a href="../canon/" class="dropdown-item">Canon</a>
 </li>
                                     
 <li>
-    <a href="../../inkjet/icl-cut-files/" class="dropdown-item">Create Cut file for ICL Imaging</a>
+    <a href="../icl-cut-files/" class="dropdown-item">Create Cut file for ICL Imaging</a>
 </li>
                                     
 <li>
-    <a href="../../inkjet/inkjet-printing%202/" class="dropdown-item">Inkjet printing 2</a>
+    <a href="./" class="dropdown-item active">Inkjet printing 2</a>
 </li>
                                     
 <li>
-    <a href="../../inkjet/inkjet-printing/" class="dropdown-item">Inkjet printing</a>
+    <a href="../inkjet-printing/" class="dropdown-item">Inkjet printing</a>
 </li>
                                 </ul>
                             </li>
@@ -120,12 +120,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../support/" class="nav-link">
+                                <a rel="prev" href="../icl-cut-files/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../inkjet/canon-mct/" class="nav-link">
+                                <a rel="next" href="../inkjet-printing/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -150,20 +150,18 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#dakis" class="nav-link">Dakis</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#connecting-to-remote-desktop" class="nav-link">Connecting to Remote Desktop</a>
+            <li class="nav-item" data-level="2"><a href="#inkjet-printing" class="nav-link">Inkjet Printing</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#job-downloader" class="nav-link">Job Downloader</a>
+            
+            <li class="nav-item" data-level="2"><a href="#borderless-printing" class="nav-link">Borderless Printing</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#ips-order" class="nav-link">IPS Order</a>
+            
+            <li class="nav-item" data-level="2"><a href="#automatic-banding-adjustment-paper-feed-adjustment" class="nav-link">Automatic Banding Adjustment (Paper Feed Adjustment)</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -171,17 +169,53 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="dakis">Dakis</h1>
-<h2 id="connecting-to-remote-desktop">Connecting to Remote Desktop</h2>
-<p>Using <a href="https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12">Microsoft Remote Desktop</a> application connect to 192.168.1.13</p>
-<p>Add a user account with the <strong>Username:</strong> dakis and <strong>password:</strong> dsi2008</p>
-<h2 id="job-downloader">Job Downloader</h2>
-<p><a href="https://downloader.dakiscdn.com/downloader.exe">Job Downloader download</a></p>
-<p><strong>Autoconfiguration Code:</strong> 6eacc79cc8506b874ff8461d9a9b1df54310bedc</p>
-<h2 id="ips-order">IPS Order</h2>
-<p><a href="http://incontrolphoto.com/IPSOrdermanager/IPSOrdermanagerInstaller.exe">IPS Order Manager Download</a></p>
-<p><strong>UserName:</strong> IND - Digital Silver Imaging<br />
-<strong>Key:</strong> 3N7K76Q2M8PYJ9</p></div>
+<h2 id="inkjet-printing">Inkjet Printing</h2>
+<ol>
+<li>Check image for sizing and border options</li>
+<li>Save image</li>
+<li>Drag into IamgeNest</li>
+<li>Render to TIFF</li>
+<li>Open TIFF in Photoshop</li>
+<li>Run ImageNest action to flatten, make 300ppi, and trim white space</li>
+<li>Open Print Studio Pro</li>
+<li>Check paper and ICC profile settings</li>
+<li>Print</li>
+</ol>
+<h2 id="borderless-printing">Borderless Printing</h2>
+<p>If you need to print edge to edge on roll paper user borderless printing. Borderless printing is only available for the Pro-4000 and Pro-6000 on roll paper. You may print borderless on the Pro-1000 anytime with the default settings.</p>
+<h2 id="automatic-banding-adjustment-paper-feed-adjustment">Automatic Banding Adjustment (Paper Feed Adjustment)</h2>
+<p>From <a href="https://support.usa.canon.com/library/ij/Manual/All/PRO-4000/EN/UG/ug_paperfeed01_0102.html">https://support.usa.canon.com/library/ij/Manual/All/PRO-4000/EN/UG/ug_paperfeed01_0102.html</a>:</p>
+<p>If printed images are affected by banding in different colors across the sheet, execute <strong>Adjust print quality</strong> for automatic adjustment of the paper feed amount. The printer prints and reads a test pattern for automatic adjustment of the feed amount.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Always check the Set priority values.</p>
+</div>
+<h3 id="selecting-feed-amount-adjustment-method">Selecting Feed Amount Adjustment Method</h3>
+<p>There are two methods of adjusting the paper feed amount, Prioritize print quality and Prioritize length accuracy, either of which will be applied during printing. Since the method that is applied during printing is determined from the value of the Set priority setting, configure Set priority to match the print target.</p>
+<p>Follow the procedure below to perform settings.</p>
+<ol>
+<li>Load paper.</li>
+<li>Tap HOME screen then tap Maintenance.</li>
+<li>Tap Paper feed adjustment.</li>
+<li>Tap Set priority.</li>
+<li>Tap paper to adjust.</li>
+<li>Tap setting &ldquo;Prioritize print quality&rdquo;</li>
+<li>Tap OK on displayed screen.</li>
+</ol>
+<p>Follow the procedure below to adjust.</p>
+<ol>
+<li>Load paper</li>
+<li>Tap HOME then tap Maintenance.</li>
+<li>Tap Paper feed adjustment.</li>
+<li>Tap Adjust print quality.</li>
+<li>Tap Auto.</li>
+<li>Tap paper to adjust.</li>
+</ol>
+<p>A test pattern is printed for adjustment and adjustment is finished.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If additional fine-tuning is necessary, execute <a href="https://support.usa.canon.com/library/ij/Manual/All/PRO-4000/EN/UG/ug_paperfeed01_0104.html">Paper feed fine adjustment</a>.</p>
+</div></div>
             </div>
         </div>
 
