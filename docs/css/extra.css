@@ -1,0 +1,10 @@
+.admonition.tip { /* csslint allow: adjoining-classes */
+    color: #00c852;
+    background-color: #F0FAF0;
+    border-color: #00c852;
+}
+
+.bg-primary {
+    background-color: #ddd;
+    background-image: linear-gradient(#545454, #2f2f2f 60%, #1d1d1d);
+}
