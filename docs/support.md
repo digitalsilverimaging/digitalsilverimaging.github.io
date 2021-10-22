@@ -1,5 +1,5 @@
 ---
-title: Support Contact Information
+title: Support
 summary:
 authors:
     - Christopher Bowers
@@ -15,17 +15,18 @@ All questions about the Kreonite processor
 Steve Dunning:
 
 * 918-691-6225
-* parts@dunningphoto.com
+* <mailto:parts@dunningphoto.com>
 
 ---
 ## Dakis
 
 All questions regarding Dakis
 
-Usually PC (short Pierre-Charles)
+Usually PC (short for Pierre-Charles)
 
-* qb@dakis.com
+<mailto:qb@dakis.com>
 
+---
 
 ## Elite Technical Service
 
@@ -34,7 +35,7 @@ All questions about the LightJet or Onyx workstations
 Mark Felice:
 
 * 201-696-8771
-* mfelice@elitetechservice.com
+* <mailto:mfelice@elitetechservice.com>
 
 ---
 
