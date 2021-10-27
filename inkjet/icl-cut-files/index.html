@@ -38,10 +38,10 @@
                                 <a href="../.." class="nav-link">Quick Links</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../digitization/" class="nav-link">Digitization</a>
+                                <a href="../../digitization/" class="nav-link">Digitization with DT Atom</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../support/" class="nav-link">Support</a>
+                                <a href="../../support/" class="nav-link">Support Contact Information</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
@@ -57,11 +57,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../canon-mct/" class="dropdown-item">Media Configuration Tool</a>
-</li>
-                                    
-<li>
-    <a href="../canon/" class="dropdown-item">Canon</a>
+    <a href="../" class="dropdown-item">Canon Info</a>
 </li>
                                     
 <li>
@@ -69,7 +65,7 @@
 </li>
                                     
 <li>
-    <a href="../inkjet-printing/" class="dropdown-item">Inkjet printing</a>
+    <a href="../mct/" class="dropdown-item">Canon Media Configuration Tool (MCT)</a>
 </li>
                                 </ul>
                             </li>
@@ -91,19 +87,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../../lightjet/" class="dropdown-item">LightJet Overview</a>
+</li>
+                                    
+<li>
     <a href="../../lightjet/auto-dmax/" class="dropdown-item">Create New Paper Target</a>
 </li>
                                     
 <li>
-    <a href="../../lightjet/cleaning/" class="dropdown-item">Cleaning</a>
-</li>
-                                    
-<li>
     <a href="../../lightjet/file-sepcs/" class="dropdown-item">File Specifications</a>
-</li>
-                                    
-<li>
-    <a href="../../lightjet/overview/" class="dropdown-item">Lightjet Daily Setup</a>
 </li>
                                 </ul>
                             </li>
@@ -116,12 +108,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../canon/" class="nav-link">
+                                <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../inkjet-printing/" class="nav-link">
+                                <a rel="next" href="../mct/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -156,6 +148,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#required-layers" class="nav-link">Required Layers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#with-imagenest" class="nav-link">With ImageNest</a>
               <ul class="nav flex-column">
               </ul>
@@ -176,36 +172,55 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="create-cut-file-for-icl-imaging">Create Cut file for ICL Imaging</h1>
+<hr />
 <h2 id="contraints">Contraints</h2>
 <ul>
 <li>Maximum Length is 94.5in</li>
-<li>Minimum distance between images is 0.3in</li>
+<li>Minimum distance between images is 0.3in (unless touching)</li>
 <li>Borderless prints that have paper white may be touching to be more efficient on space and cuts</li>
+<li>Dots 0.25in black</li>
 <li>Minimum distance between registration dots is 1.75in</li>
 <li>Maximum distance between registration dots is 24in</li>
 </ul>
 <h2 id="illustrator-tips">Illustrator Tips</h2>
 <ul>
-<li>
-<p>Command-Y to see all path outlines</p>
-</li>
-<li>
-<p>Command-Shift-M to move object</p>
-</li>
-<li>Command-D to repeat the move</li>
+<li><strong>Command-Y</strong> to see all path outlines</li>
+<li><strong>Command-Shift-M</strong> to move object</li>
+<li><strong>Command-D</strong> to repeat the move</li>
 </ul>
-<h2 id="with-imagenest">With ImageNest</h2>
-<p>Good for setting up facemounts</p>
-<h2 id="manual">Manual</h2>
-<h3 id="required-layers">Required Layers</h3>
+<h2 id="required-layers">Required Layers</h2>
 <ol>
 <li>Registration Dots</li>
 <li>Cut paths</li>
 <li>Image files</li>
 </ol>
+<h2 id="with-imagenest">With ImageNest</h2>
+<p>Use for setting up facemounts</p>
+<ol>
+<li>Set Nesting Method to Single Image</li>
+<li>Uncheck Cut Marks</li>
+<li>In the Cut Marks section check <strong>Generate Cut Contours for PDF</strong></li>
+<li>Uncheck Annotations</li>
+<li>Create PDF</li>
+<li>Open PDF in Illustrator</li>
+<li>Move cut contour to a new layer and shrink by 0.25in</li>
+<li>Make a layer for registration dots and create dots within specification</li>
+<li>Save as .ai file</li>
+<li>Open in Photoshop for printing</li>
+</ol>
+<h2 id="manual">Manual</h2>
+<ol>
+<li>Create a new Illustrator document that is the size you would like to nest images</li>
+<li>Nest the images on the image layer</li>
+<li>Create the cut paths on another layer</li>
+<li>Keeping in mind the specifications add your registration dots</li>
+<li>Save as .ai file</li>
+<li>Open the .ai file in Photoshop for printing</li>
+</ol>
+<p><a href="/assets/multi-layout-sample.zip">Example file</a></p>
 <h2 id="sending-files-to-icl">Sending files to ICL</h2>
-<p><a href="https://transporter.icl-imaging.com/filedrop/ICL-Transporter/">https://transporter.icl-imaging.com/filedrop/ICL-Transporter/</a></p>
-<p><img alt="ICL Transporter" src="/images/icl-transporter.png" title="ICL Transporter" /></p></div>
+<p>Use ICL&rsquo;s uploader.</p>
+<p><a href="https://transporter.icl-imaging.com/filedrop/ICL-Transporter/">https://transporter.icl-imaging.com/filedrop/ICL-Transporter/</a></p></div>
             </div>
         </div>
 

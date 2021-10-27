@@ -38,10 +38,10 @@
                                 <a href="../.." class="nav-link">Quick Links</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../digitization/" class="nav-link">Digitization</a>
+                                <a href="../../digitization/" class="nav-link">Digitization with DT Atom</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../support/" class="nav-link">Support</a>
+                                <a href="../../support/" class="nav-link">Support Contact Information</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
@@ -57,11 +57,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../inkjet/canon-mct/" class="dropdown-item">Media Configuration Tool</a>
-</li>
-                                    
-<li>
-    <a href="../../inkjet/canon/" class="dropdown-item">Canon</a>
+    <a href="../../inkjet/" class="dropdown-item">Canon Info</a>
 </li>
                                     
 <li>
@@ -69,7 +65,7 @@
 </li>
                                     
 <li>
-    <a href="../../inkjet/inkjet-printing/" class="dropdown-item">Inkjet printing</a>
+    <a href="../../inkjet/mct/" class="dropdown-item">Canon Media Configuration Tool (MCT)</a>
 </li>
                                 </ul>
                             </li>
@@ -91,19 +87,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../" class="dropdown-item">LightJet Overview</a>
+</li>
+                                    
+<li>
     <a href="./" class="dropdown-item active">Create New Paper Target</a>
 </li>
                                     
 <li>
-    <a href="../cleaning/" class="dropdown-item">Cleaning</a>
-</li>
-                                    
-<li>
     <a href="../file-sepcs/" class="dropdown-item">File Specifications</a>
-</li>
-                                    
-<li>
-    <a href="../overview/" class="dropdown-item">Lightjet Daily Setup</a>
 </li>
                                 </ul>
                             </li>
@@ -116,12 +108,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../kreonite/kreonite-parts-list/" class="nav-link">
+                                <a rel="prev" href="../" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../cleaning/" class="nav-link">
+                                <a rel="next" href="../file-sepcs/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -146,23 +138,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
+            <li class="nav-item" data-level="1"><a href="#create-new-paper-target" class="nav-link">Create New Paper Target</a>
+              <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#copy-an-existing-target" class="nav-link">Copy an Existing Target</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#creating-calibration-new-target-with-auto-dmax" class="nav-link">Creating Calibration New Target with Auto-Dmax</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#linking-calibration-target-to-media" class="nav-link">Linking Calibration Target to Media</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#flashing-paper" class="nav-link">Flashing Paper</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -170,51 +163,60 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="create-new-paper-target">Create New Paper Target</h1>
+<hr />
+<p>When there is a new batch of paper you have two options in creating a new paper config. You can <a href="#copy-an-existing-target">copy from an existing target</a> or <a href="#creating-calibration-new-target-with-auto-dmax">create a new target</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure developer is at full strenght before making a new paper calibration</p>
+</div>
 <h2 id="copy-an-existing-target">Copy an Existing Target</h2>
-<h2 id="creating-calibration-new-target-with-auto-dmax">Creating Calibration New Target with Auto-Dmax</h2>
 <ol>
-<li>Open <em>Fusion 3</em> application</li>
+<li>In Fusion click <strong>Copy…</strong></li>
+<li>Type a The new batch</li>
+<li>Select the previous configuration that you want to copy<br />
+<img alt=" " src="/images/fusion-copy-config.png" /></li>
+<li>Click <strong>Next…</strong></li>
+<li>Re-print gray balance</li>
+<li>Iterate gray balance is necessary</li>
+<li><a href="#linking-calibration-target-to-media">Link new calibration</a> in Thrive RIP Queue</li>
 </ol>
+<h2 id="creating-calibration-new-target-with-auto-dmax">Creating Calibration New Target with Auto-Dmax</h2>
 <ul>
-<li>Wait for imaging to finish</li>
+<li>In Fusion click <strong>New…</strong></li>
+<li>Select Corresponding target file</li>
+<li>Start with the default RGB laser compensations</li>
+<li>Change Resolution to 300 dots / inch</li>
+<li>Click <strong>Print Auto Dmax Pattern</strong></li>
+<li>Wait the 5 minutes for latent image to stabilize and processed media</li>
+<li>After processing trim and dry with hairdryer (fiber only).</li>
+<li>Evaluate the evenness of the RGB patches. Ideally they should be similar tonality</li>
+<li>Read the first strip and evaluate dmax.<ul>
+<li>The dmax for a paper conig is saved in <code>C:\LightJetFE\blend\material30\\[NAME OF MATERIAL\]\default.tgt</code></li>
+</ul>
+</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If Dmax hasn&rsquo;t been reached you must go back to the laser comps and manually change them. The Fusion software is fooled by the black and white paper and will make an incorrect guess for new laser compensation.</p>
 </div>
 <ul>
-<li>Wait at least and additional 5 minutes for latent image to stabilize</li>
-<li>In <em><strong>complete darkness</strong></em> open LightJet and cut off paper. Close LightJet after cutting off paper.</li>
-<li>Feed paper&rsquo;s left edge first with the emulsion facing up into the processor.<ul>
-<li>Processing time takes 17 minutes. Set a timer.</li>
+<li>Read the remaining strips<br />
+<img alt="" src="/images/fusion-dmax-strips.png" /></li>
+<li>Click <strong>Next</strong><ul>
+<li>If you don&rsquo;t get the dialog saying Auto Dmax is complete you will have to _Clean Current Gray Balance_aa and start over<br />
+<img alt="" src="/images/fusion-auto-dmax-complete.png" /></li>
 </ul>
 </li>
-<li>
-<p>After processing trim and dry with hairdryer (fiber only).</p>
-</li>
-<li>
-<p>In Fusion click <code>OK</code> that the plot is ready to be processed and then click <code>next</code></p>
-</li>
-<li>
-<p>Read strips one at a time starting with strip 1 (the right most strip).</p>
-</li>
-<li>
-<p>Evaluate dmax</p>
-<ul>
-<li>The cone is the white area which shows the tollerance of deltaE values from the patches </li>
-<li>Cone should be wide with most lines inside.</li>
+<li>Click <strong>Print Gray Balance Pattern</strong></li>
+<li>Wait the 5 minutes for latent image to stabilize and processed media</li>
+<li>After processing trim and dry with hairdryer (fiber only).</li>
+<li>Read strips and evaluate cone<ul>
+<li>If the gray balance isn&rsquo;t in the cone click <strong>Next</strong> to <strong>Iterate Gray Balance</strong></li>
+<li>Repeat these steps until a good cone result</li>
 </ul>
 </li>
-</ul>
-<p><img alt="Very good cone" src="/images/cone.png" /></p>
-<ul>
-<li>If good cone cancel and exit <em>Fusion 3</em> </li>
-<li>
-<p><strong>Do not click <code>next</code></strong></p>
-</li>
-<li>
-<p>Repeat steps above until there&rsquo;s a good result</p>
-</li>
+<li><a href="#linking-calibration-target-to-media">Link new calibration</a> in Thrive RIP Queue</li>
 </ul>
 <h2 id="linking-calibration-target-to-media">Linking Calibration Target to Media</h2>
 <ol>

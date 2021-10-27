@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Christopher Bowers">
-        <link rel="canonical" href="http://docs.digitalsilverimaging.com/lightjet/cleaning/">
+        <link rel="canonical" href="http://docs.digitalsilverimaging.com/inkjet/mct/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Cleaning - DSI Documentation</title>
+        <title>Canon Media Configuration Tool (MCT) - DSI Documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -38,10 +38,10 @@
                                 <a href="../.." class="nav-link">Quick Links</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../digitization/" class="nav-link">Digitization</a>
+                                <a href="../../digitization/" class="nav-link">Digitization with DT Atom</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../support/" class="nav-link">Support</a>
+                                <a href="../../support/" class="nav-link">Support Contact Information</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dakis <b class="caret"></b></a>
@@ -52,24 +52,20 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Inkjet <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../inkjet/canon-mct/" class="dropdown-item">Media Configuration Tool</a>
+    <a href="../" class="dropdown-item">Canon Info</a>
 </li>
                                     
 <li>
-    <a href="../../inkjet/canon/" class="dropdown-item">Canon</a>
+    <a href="../icl-cut-files/" class="dropdown-item">Create Cut file for ICL Imaging</a>
 </li>
                                     
 <li>
-    <a href="../../inkjet/icl-cut-files/" class="dropdown-item">Create Cut file for ICL Imaging</a>
-</li>
-                                    
-<li>
-    <a href="../../inkjet/inkjet-printing/" class="dropdown-item">Inkjet printing</a>
+    <a href="./" class="dropdown-item active">Canon Media Configuration Tool (MCT)</a>
 </li>
                                 </ul>
                             </li>
@@ -86,24 +82,20 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lightjet <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../auto-dmax/" class="dropdown-item">Create New Paper Target</a>
+    <a href="../../lightjet/" class="dropdown-item">LightJet Overview</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Cleaning</a>
+    <a href="../../lightjet/auto-dmax/" class="dropdown-item">Create New Paper Target</a>
 </li>
                                     
 <li>
-    <a href="../file-sepcs/" class="dropdown-item">File Specifications</a>
-</li>
-                                    
-<li>
-    <a href="../overview/" class="dropdown-item">Lightjet Daily Setup</a>
+    <a href="../../lightjet/file-sepcs/" class="dropdown-item">File Specifications</a>
 </li>
                                 </ul>
                             </li>
@@ -116,12 +108,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../auto-dmax/" class="nav-link">
+                                <a rel="prev" href="../icl-cut-files/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../file-sepcs/" class="nav-link">
+                                <a rel="next" href="../../kreonite/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -146,17 +138,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#cleaning" class="nav-link">Cleaning</a>
+            <li class="nav-item" data-level="1"><a href="#canon-media-configuration-tool-mct" class="nav-link">Canon Media Configuration Tool (MCT)</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#cleaning-output-rollers" class="nav-link">Cleaning Output Rollers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#cleaning-drum" class="nav-link">Cleaning Drum</a>
+            <li class="nav-item" data-level="2"><a href="#adding-a-new-paper" class="nav-link">Adding a new paper</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#cleaning-light-shield" class="nav-link">Cleaning Light Shield</a>
+            <li class="nav-item" data-level="2"><a href="#update-media-information" class="nav-link">Update Media Information</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#copy-custom-papers-to-another-printer" class="nav-link">Copy Custom Papers to Another Printer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#backing-up-media-information" class="nav-link">Backing Up Media Information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -167,19 +163,83 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="cleaning">Cleaning</h1>
-<h2 id="cleaning-output-rollers">Cleaning Output Rollers</h2>
-<p>Enter the cleaning mode by pressing the following buttons:</p>
-<ol start="0">
-<li>Put LightJet <code>Offline</code></li>
-<li>Setup </li>
-<li>Cleaning</li>
-<li>Clean rollers</li>
-<li>Enter</li>
+<h1 id="canon-media-configuration-tool-mct">Canon Media Configuration Tool (MCT)</h1>
+<hr />
+<p>Refer to the Canon Media Configuration Tool <a href="https://ij.manual.canon/ij/webmanual/MediaConfigurationTool/M/1.5/EN/MCT/Top.html">Online Manual</a> for detailed information regarding the MCT. </p>
+<h2 id="adding-a-new-paper">Adding a new paper</h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click the <strong>Instructions</strong> button to bring up the manual for the Edit Custom Paper Dialog Box</p>
+</div>
+<ol>
+<li>Select base printer</li>
+<li>Click the <strong>Create Custom Paper</strong> button</li>
+<li>Select a Paper category that closest matches the paper</li>
+<li>Click the <strong>Find Paper</strong> button</li>
+<li>Type in GSM of paper<ul>
+<li>MCT will automatically select the base paper that best matches</li>
+</ul>
+</li>
+<li>Type in name of paper for te driver and the printer panel</li>
+<li>Click <strong>Start</strong> to update printer with media information</li>
+<li>When prompted to update the printer driver with media click <strong>Yes</strong>.<ul>
+<li>Follow prompts from the Canon utility to update the drive with the new media information</li>
+</ul>
+</li>
+<li>In MCT click <strong>Yes</strong> to edit the new created paper</li>
+<li>Load paper into corresponding printer</li>
+<li>Click <strong>Start</strong> to run the paper feed adjustment</li>
 </ol>
-<p>Once in the roller cleaning mode vacuum the rollers then press <code>Enter</code> to advance the rollers and vacuum again. Repeat the steps until the rollers are clean.</p>
-<h2 id="cleaning-drum">Cleaning Drum</h2>
-<h2 id="cleaning-light-shield">Cleaning Light Shield</h2></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Load paper prior to running paper feed or creating a calibration target click Update</p>
+</div>
+<ol start="12">
+<li>Update printer driver</li>
+<li>You don&rsquo;t need to save the custom paper to a file</li>
+<li>Click the edit button to reopen the <strong>Edit Custom Paper</strong> dialog box</li>
+<li>Review and change any relevant settings in <em>Advanced Print Setting</em> and <em>Advanced Paper Setting</em></li>
+<li>In the <strong>Calibration Target</strong> tab click start to create a unique calibration target for the paper</li>
+<li>Load paper in the printer then click <strong>Start</strong></li>
+<li>Click Update</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After making changes in MCT you will need to the <a href="#update-media-information">Update media information</a> all computers</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Custon paper information is saved on the printer and needs to be <a href="#backing-up-media-information">backed</a> up in case of printer failure</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click the <strong>Instructions</strong> button to bring up the manual for the Edit Custom Paper Dialog Box</p>
+</div>
+<h2 id="update-media-information">Update Media Information</h2>
+<p>If you make any changes in the MCT you will need to update the media information in your printer driver.</p>
+<ul>
+<li>From the printer&rsquo;s queue click <strong>Settings</strong> button</li>
+<li>Switch to the utility tab</li>
+<li>Click <strong>Open Printer Utility</strong></li>
+<li>Drop down to Media Information</li>
+<li>Click the Update Media Information <img alt="Update media information" src="/images/mct-update.png" /> button</li>
+<li>Follow prompts to complete update</li>
+</ul>
+<h2 id="copy-custom-papers-to-another-printer">Copy Custom Papers to Another Printer</h2>
+<ul>
+<li>On printer 1 click the Export Media Information <img alt="Export Media Information" src="/images/mct-export.png" /> button</li>
+<li>Check any and all papers you would like to move to printer 2</li>
+<li>On printer 2 click the Add/Update Media Information <img alt="Add/Update Media Information" src="/images/mct-add.png" /> button</li>
+<li>Click the <strong>Import…</strong> button</li>
+<li>Select the export am1x from from printer 1</li>
+<li>Check any and all paper you would like to import into printer 2 and click <strong>Next</strong></li>
+<li>Edit each paper and create a unique calibration target</li>
+</ul>
+<h2 id="backing-up-media-information">Backing Up Media Information</h2>
+<ul>
+<li>Click the Backup Media Information <img alt="Backup Media Information" src="/images/mct-backup.png" /> button</li>
+<li>Name file and save</li>
+</ul></div>
             </div>
         </div>
 
