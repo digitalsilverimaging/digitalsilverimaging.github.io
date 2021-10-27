@@ -1,12 +1,6 @@
----
-title: Support
-summary:
-authors:
-    - Christopher Bowers
-date: 2021-09-01
----
-
 # Support Contact Information
+
+---
 
 ## Dunning Photo Parts
 
