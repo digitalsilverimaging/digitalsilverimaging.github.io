@@ -1,8 +1,11 @@
 # Quick Links
 
-!!! tip
+!!! Tip
     Use Command + S to search the documentation
 
+## Canon Printer Profiles
+
+[Download ⬇️](https://github.com/digitalsilverimaging/ICC-Profiles/releases/download/v1.0/DSI.ICC.Profiles.2021.zip)
 
 ## Labworks
 

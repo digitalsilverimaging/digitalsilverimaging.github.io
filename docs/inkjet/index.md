@@ -2,6 +2,10 @@
 
 ---
 
+## Profiles
+
+[Custom Profiles 2021](https://github.com/digitalsilverimaging/ICC-Profiles/releases/download/v1.0/DSI.ICC.Profiles.2021.zip)
+
 ## Drivers, Sofware, and Manuals
 
 [Pro-6000 Drivers, Software, and Manuals Downloads](https://www.usa.canon.com/internet/portal/us/home/support/details/professional-large-format-printers/professional-photo-fine-art/imageprograf-pro-6000/imageprograf-pro-6000)
