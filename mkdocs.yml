@@ -6,6 +6,23 @@ theme:
     name: mkdocs
     locale: en
 
+nav:
+    - Quick Links: index.md
+    - LightJet:
+        - Overview: lightjet/index.md
+        - File Specs: lightjet/file-specs.md
+        - New Paper Configuration: lightjet/auto-dmax.md
+    - Kreonite:
+        - Overview: kreonite/index.md
+        - Parts List: kreonite/kreonite-parts-list.md
+    - Inkjet:
+        - Overview: inkjet/index.md
+        - Media Configuration Tool: inkjet/mct.md
+        - Cut Files: inkjet/icl-cut-files.md
+    - Dakis: dakis.md
+    - Digitization: digitization.md
+    - Support: support.md
+
 repo_url: https://github.com/digitalsilverimaging/digitalsilverimaging.github.io
 edit_uri: ""
 
