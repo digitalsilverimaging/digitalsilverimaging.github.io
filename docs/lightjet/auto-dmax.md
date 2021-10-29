@@ -31,7 +31,7 @@ When there is a new batch of paper you have two options in creating a new paper 
 - After processing trim and dry with hairdryer (fiber only).
 - Evaluate the evenness of the RGB patches. Ideally they should be similar tonality
 - Read the first strip and evaluate dmax.
-    - The dmax for a paper conig is saved in `C:\LightJetFE\blend\material30\\[NAME OF MATERIAL\]\default.tgt`
+    - The dmax for a paper conig is saved in `C:\LightJetFE\blend\material30\[NAME OF MATERIAL]\default.tgt`
 !!! warning
     If Dmax hasn't been reached you must go back to the laser comps and manually change them. The Fusion software is fooled by the black and white paper and will make an incorrect guess for new laser compensation.
 - Read the remaining strips  
